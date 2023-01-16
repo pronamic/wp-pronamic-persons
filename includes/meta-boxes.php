@@ -116,7 +116,7 @@ function pronamic_persons_save_meta_box( $post_id ) {
 		return;
 	}
 
-	if ( ! current_user_can( 'edit_post' ) ) {
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
 		return;
 	}
 
